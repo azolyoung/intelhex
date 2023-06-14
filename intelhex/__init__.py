@@ -106,7 +106,7 @@ class IntelHex(object):
 
         @raise  EndOfFile   if EOF record encountered.
         '''
-        s = s.rstrip('\r\n')
+        s = s.rstrip('\n')
         if not s:
             return          # empty line
 
